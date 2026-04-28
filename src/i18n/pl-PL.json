@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Kliknij plik = kopiuj; kliknij folder = rozwiń/zwiń",
+    "chooseFolder": "Wybierz folder",
+    "rescan": "Skanuj ponownie",
+    "searchPlaceholder": "Szukaj nazwy pliku lub ścieżki...",
+    "skipHeavyDirs": "Pomiń katalogi zależności/budowania",
+    "includeHidden": "Uwzględnij ukryte pliki",
+    "noFolderSelected": "Nie wybrano folderu",
+    "treeTitle": "Drzewo plików",
+    "itemCount": "{{total}} elementów",
+    "emptyTreeHint": "Wybierz folder, aby wyświetlić drzewo plików",
+    "emptySearchHint": "Brak pasujących plików",
+    "copyFolderTitle": "Kopiuj wszystkie pliki tekstowe w tym folderze",
+    "copyFileTitle": "Kopiuj ten plik"
+  },
+  "hero": {
+    "pill": "Mało pamięci · Skanowanie w tle · Lista wirtualna · Kopiowanie folderów",
+    "heading": "Kopiuj pliki kodu jak w drzewie plików VS Code",
+    "description": "Po wybraniu folderu projektu po lewej stronie pojawi się drzewo katalogów. Kliknięcie pliku kopiuje jego ścieżkę względną + zawartość. Kliknięcie przycisku kopiowania folderu kopiuje wszystkie pliki tekstowe w środku; zbyt duże foldery są blokowane, aby uniknąć zawieszenia systemu.",
+    "sampleTitle": "Format kopiowania"
+  },
+  "stats": {
+    "status": "Status",
+    "files": "Pliki",
+    "folders": "Foldery",
+    "elapsed": "Czas",
+    "scanning": "Skanowanie",
+    "copying": "Kopiowanie",
+    "idle": "Bezczynny"
+  },
+  "tips": {
+    "heading": "Wydajność",
+    "tip1": "Kopiowanie folderów wykorzystuje już zeskanowane drzewo plików zamiast ponownego skanowania dysku.",
+    "tip2": "Liczba plików i łączny rozmiar są sprawdzane przed kopiowaniem; zbyt duże foldery są natychmiast blokowane.",
+    "tip3": "Wątki Rust w tle obsługują I/O plików i zapis do schowka — interfejs React nigdy się nie zawiesza.",
+    "tip4": "node_modules, .git, target, dist, build i inne ciężkie katalogi są domyślnie pomijane."
+  },
+  "status": {
+    "initial": "Wybierz folder z kodem",
+    "scanningBg": "Skanowanie drzewa plików w tle, interfejs pozostaje responsywny...",
+    "scanDone": "Skanowanie zakończone: {{files}} plików, {{dirs}} folderów",
+    "scanFailed": "Skanowanie nie powiodło się",
+    "copyingFile": "Kopiowanie pliku: {{name}}",
+    "copiedFile": "Plik skopiowany: {{path}} · {{size}} · {{chars}} znaków",
+    "copyFileFailed": "Kopiowanie pliku nie powiodło się",
+    "copyingFolder": "Kopiowanie folderu: {{name}} · {{total}} plików...",
+    "copiedFolder": "Folder skopiowany: {{path}} · {{files}} plików · {{size}} · {{chars}} znaków",
+    "copiedFolderSkipped": " · pominięto {{skipped}} elementów",
+    "copyFolderFailed": "Kopiowanie folderu nie powiodło się",
+    "skippedHint": "Pominięto {{total}} ukrytych elementów lub ciężkich katalogów; odznacz opcje po lewej i skanuj ponownie, aby je uwzględnić.",
+    "folderNoFiles": "Brak plików do skopiowania w tym folderze.",
+    "folderTooManyFiles": "Ten folder zawiera {{total}} plików, przekraczając limit {{max}}. Wybierz mniejszy podfolder.",
+    "folderTooLarge": "Łączny rozmiar wynosi około {{size}}, przekraczając limit {{max}}. Wybierz mniejszy podfolder.",
+    "folderTooLargeBlocked": "Folder zbyt duży, kopiowanie zablokowane"
+  },
+  "lang": {
+    "label": "Język"
+  }
+}

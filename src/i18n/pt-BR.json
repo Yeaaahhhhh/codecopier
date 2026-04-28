@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Clique no arquivo = copiar; clique na pasta = expandir/recolher",
+    "chooseFolder": "Escolher pasta",
+    "rescan": "Reescanear",
+    "searchPlaceholder": "Buscar nome de arquivo ou caminho...",
+    "skipHeavyDirs": "Pular pastas de dependências/build",
+    "includeHidden": "Incluir arquivos ocultos",
+    "noFolderSelected": "Nenhuma pasta selecionada",
+    "treeTitle": "Árvore de arquivos",
+    "itemCount": "{{total}} itens",
+    "emptyTreeHint": "Selecione uma pasta para exibir a árvore de arquivos",
+    "emptySearchHint": "Nenhum arquivo correspondente",
+    "copyFolderTitle": "Copiar todos os arquivos de texto desta pasta",
+    "copyFileTitle": "Copiar este arquivo"
+  },
+  "hero": {
+    "pill": "Pouca memória · Varredura em segundo plano · Lista virtual · Cópia por pasta",
+    "heading": "Copie arquivos de código como na árvore do VS Code",
+    "description": "Após selecionar uma pasta de projeto, a árvore de diretórios aparece à esquerda. Clicar em um arquivo copia seu caminho relativo + conteúdo. Clicar no botão de cópia de uma pasta copia todos os arquivos de texto; pastas muito grandes são bloqueadas para evitar travamentos.",
+    "sampleTitle": "Formato de cópia"
+  },
+  "stats": {
+    "status": "Status",
+    "files": "Arquivos",
+    "folders": "Pastas",
+    "elapsed": "Tempo",
+    "scanning": "Escaneando",
+    "copying": "Copiando",
+    "idle": "Ocioso"
+  },
+  "tips": {
+    "heading": "Design de desempenho",
+    "tip1": "A cópia de pastas reutiliza a árvore de arquivos já escaneada em vez de reescanear o disco.",
+    "tip2": "A contagem de arquivos e o tamanho total são verificados antes da cópia; pastas muito grandes são bloqueadas imediatamente.",
+    "tip3": "Threads Rust em segundo plano gerenciam E/S de arquivos e escrita na área de transferência — a interface React nunca trava.",
+    "tip4": "node_modules, .git, target, dist, build e outros diretórios pesados são pulados por padrão."
+  },
+  "status": {
+    "initial": "Selecione uma pasta de código",
+    "scanningBg": "Escaneando a árvore de arquivos em segundo plano, a interface continua responsiva...",
+    "scanDone": "Varredura concluída: {{files}} arquivos, {{dirs}} pastas",
+    "scanFailed": "Falha na varredura",
+    "copyingFile": "Copiando arquivo: {{name}}",
+    "copiedFile": "Arquivo copiado: {{path}} · {{size}} · {{chars}} caracteres",
+    "copyFileFailed": "Falha ao copiar arquivo",
+    "copyingFolder": "Copiando pasta: {{name}} · {{total}} arquivos...",
+    "copiedFolder": "Pasta copiada: {{path}} · {{files}} arquivos · {{size}} · {{chars}} caracteres",
+    "copiedFolderSkipped": " · {{skipped}} itens pulados",
+    "copyFolderFailed": "Falha ao copiar pasta",
+    "skippedHint": "{{total}} itens ocultos ou diretórios pesados foram pulados; desmarque as opções à esquerda e reescaneie para incluí-los.",
+    "folderNoFiles": "Nenhum arquivo copiável nesta pasta.",
+    "folderTooManyFiles": "Esta pasta contém {{total}} arquivos, excedendo o limite de {{max}}. Selecione uma subpasta menor.",
+    "folderTooLarge": "O tamanho total é de aproximadamente {{size}}, excedendo o limite de {{max}}. Selecione uma subpasta menor.",
+    "folderTooLargeBlocked": "Pasta muito grande, cópia bloqueada"
+  },
+  "lang": {
+    "label": "Idioma"
+  }
+}

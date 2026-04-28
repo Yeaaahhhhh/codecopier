@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "撳檔案 = 複製；撳資料夾 = 展開/收埋",
+    "chooseFolder": "揀資料夾",
+    "rescan": "重新掃描",
+    "searchPlaceholder": "搜尋檔案名或路徑...",
+    "skipHeavyDirs": "跳過依賴/構建目錄",
+    "includeHidden": "包含隱藏檔案",
+    "noFolderSelected": "未揀資料夾",
+    "treeTitle": "檔案樹",
+    "itemCount": "{{total}} 項",
+    "emptyTreeHint": "揀咗資料夾之後會顯示檔案樹",
+    "emptySearchHint": "冇匹配嘅檔案",
+    "copyFolderTitle": "複製呢個資料夾入面嘅全部文字檔案",
+    "copyFileTitle": "複製呢個檔案"
+  },
+  "hero": {
+    "pill": "低記憶體 · 後台掃描 · 虛擬列表 · 資料夾快速複製",
+    "heading": "好似 VS Code 檔案樹咁複製代碼檔案",
+    "description": "揀咗一個項目資料夾之後，左邊會顯示目錄樹。撳檔案會複製「相對路徑 + 檔案內容」。撳資料夾右邊嘅複製掣，會複製呢個資料夾入面嘅文字檔案；太大嘅資料夾會提前攔截，避免剪貼簿、Word 或者系統卡死。",
+    "sampleTitle": "複製格式"
+  },
+  "stats": {
+    "status": "狀態",
+    "files": "檔案",
+    "folders": "資料夾",
+    "elapsed": "用時",
+    "scanning": "掃描緊",
+    "copying": "複製緊",
+    "idle": "得閒"
+  },
+  "tips": {
+    "heading": "效能設計",
+    "tip1": "資料夾複製唔會重新掃描硬碟，而係直接用已掃描嘅檔案樹，減少等待。",
+    "tip2": "複製之前會先檢查檔案數量同總大小，太大嘅資料夾會即刻阻止，避免長時間卡住。",
+    "tip3": "Rust 後台線程執行檔案讀取同剪貼簿寫入，React UI 唔會 Not Responding。",
+    "tip4": "預設跳過 node_modules、.git、target、dist、build 等重型目錄。"
+  },
+  "status": {
+    "initial": "請揀一個代碼資料夾",
+    "scanningBg": "後台掃描緊檔案樹，介面仍然可以操作...",
+    "scanDone": "掃描完成：{{files}} 個檔案，{{dirs}} 個資料夾",
+    "scanFailed": "掃描失敗",
+    "copyingFile": "複製緊檔案：{{name}}",
+    "copiedFile": "已複製檔案：{{path}} · {{size}} · {{chars}} 字元",
+    "copyFileFailed": "複製檔案失敗",
+    "copyingFolder": "複製緊資料夾：{{name}} · {{total}} 個檔案...",
+    "copiedFolder": "已複製資料夾：{{path}} · {{files}} 個檔案 · {{size}} · {{chars}} 字元",
+    "copiedFolderSkipped": " · 跳過咗 {{skipped}} 項",
+    "copyFolderFailed": "複製資料夾失敗",
+    "skippedHint": "已跳過 {{total}} 個隱藏項或者重型目錄；取消左邊選項之後重新掃描可以包含佢哋。",
+    "folderNoFiles": "呢個資料夾入面冇可以複製嘅檔案。",
+    "folderTooManyFiles": "呢個資料夾入面有 {{total}} 個檔案，超過上限 {{max}} 個。請揀細啲嘅子資料夾。",
+    "folderTooLarge": "呢個資料夾入面檔案總大小約 {{size}}，超過上限 {{max}}。請揀細啲嘅子資料夾。",
+    "folderTooLargeBlocked": "資料夾太大，已阻止複製"
+  },
+  "lang": {
+    "label": "語言"
+  }
+}

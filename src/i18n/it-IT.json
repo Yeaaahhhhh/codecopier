@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Clicca su un file = copia; clicca su una cartella = espandi/comprimi",
+    "chooseFolder": "Scegli cartella",
+    "rescan": "Riscansiona",
+    "searchPlaceholder": "Cerca nome file o percorso...",
+    "skipHeavyDirs": "Ignora cartelle dipendenze/build",
+    "includeHidden": "Includi file nascosti",
+    "noFolderSelected": "Nessuna cartella selezionata",
+    "treeTitle": "Albero dei file",
+    "itemCount": "{{total}} elementi",
+    "emptyTreeHint": "Seleziona una cartella per visualizzare l'albero dei file",
+    "emptySearchHint": "Nessun file corrispondente",
+    "copyFolderTitle": "Copia tutti i file di testo in questa cartella",
+    "copyFileTitle": "Copia questo file"
+  },
+  "hero": {
+    "pill": "Bassa memoria · Scansione in background · Lista virtuale · Copia cartella",
+    "heading": "Copia file di codice come nell'albero di VS Code",
+    "description": "Dopo aver selezionato una cartella di progetto, l'albero delle directory appare a sinistra. Cliccare su un file copia il suo percorso relativo + contenuto. Cliccare sul pulsante copia di una cartella copia tutti i file di testo al suo interno; le cartelle troppo grandi vengono bloccate per evitare blocchi del sistema.",
+    "sampleTitle": "Formato di copia"
+  },
+  "stats": {
+    "status": "Stato",
+    "files": "File",
+    "folders": "Cartelle",
+    "elapsed": "Tempo",
+    "scanning": "Scansione",
+    "copying": "Copia",
+    "idle": "Inattivo"
+  },
+  "tips": {
+    "heading": "Design ad alte prestazioni",
+    "tip1": "La copia delle cartelle riutilizza l'albero dei file già scansionato anziché riscansionare il disco.",
+    "tip2": "Il numero di file e la dimensione totale vengono verificati prima della copia; le cartelle troppo grandi vengono bloccate immediatamente.",
+    "tip3": "I thread Rust in background gestiscono I/O dei file e scrittura negli appunti — l'interfaccia React non si blocca mai.",
+    "tip4": "node_modules, .git, target, dist, build e altre directory pesanti vengono ignorate per impostazione predefinita."
+  },
+  "status": {
+    "initial": "Seleziona una cartella di codice",
+    "scanningBg": "Scansione dell'albero dei file in background, l'interfaccia resta reattiva...",
+    "scanDone": "Scansione completata: {{files}} file, {{dirs}} cartelle",
+    "scanFailed": "Scansione fallita",
+    "copyingFile": "Copia del file: {{name}}",
+    "copiedFile": "File copiato: {{path}} · {{size}} · {{chars}} caratteri",
+    "copyFileFailed": "Copia del file fallita",
+    "copyingFolder": "Copia della cartella: {{name}} · {{total}} file...",
+    "copiedFolder": "Cartella copiata: {{path}} · {{files}} file · {{size}} · {{chars}} caratteri",
+    "copiedFolderSkipped": " · {{skipped}} elementi saltati",
+    "copyFolderFailed": "Copia della cartella fallita",
+    "skippedHint": "{{total}} elementi nascosti o directory pesanti saltati; deseleziona le opzioni a sinistra e riscansiona per includerli.",
+    "folderNoFiles": "Nessun file copiabile in questa cartella.",
+    "folderTooManyFiles": "Questa cartella contiene {{total}} file, superando il limite di {{max}}. Seleziona una sottocartella più piccola.",
+    "folderTooLarge": "La dimensione totale è circa {{size}}, superando il limite di {{max}}. Seleziona una sottocartella più piccola.",
+    "folderTooLargeBlocked": "Cartella troppo grande, copia bloccata"
+  },
+  "lang": {
+    "label": "Lingua"
+  }
+}

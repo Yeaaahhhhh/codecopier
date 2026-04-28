@@ -1,0 +1,64 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Click file = copy; Click folder = expand/collapse",
+    "chooseFolder": "Choose Folder",
+    "rescan": "Rescan",
+    "searchPlaceholder": "Search file name or path...",
+    "skipHeavyDirs": "Skip dependency/build dirs",
+    "includeHidden": "Include hidden files",
+    "noFolderSelected": "No folder selected",
+    "treeTitle": "File Tree",
+    "itemCount": "{{total}} items",
+    "emptyTreeHint": "Select a folder to display the file tree",
+    "emptySearchHint": "No matching files",
+    "copyFolderTitle": "Copy all text files in this folder",
+    "copyFileTitle": "Copy this file"
+  },
+  "hero": {
+    "pill": "Low memory · Background scan · Virtual list · Folder batch copy",
+    "heading": "Copy code files like a VS Code file tree",
+    "description": "After selecting a project folder, the directory tree appears on the left. Clicking a file copies its relative path + content. Clicking the copy button on a folder copies all text files inside; oversized folders are blocked early to prevent clipboard or system freezes.",
+    "sampleTitle": "Copy Format"
+  },
+  "stats": {
+    "status": "Status",
+    "files": "Files",
+    "folders": "Folders",
+    "elapsed": "Elapsed",
+    "scanning": "Scanning",
+    "copying": "Copying",
+    "idle": "Idle"
+  },
+  "tips": {
+    "heading": "Performance Design",
+    "tip1": "Folder copy reuses the scanned file tree instead of re-scanning the disk.",
+    "tip2": "File count and total size are checked before copying; oversized folders are blocked immediately.",
+    "tip3": "Rust background threads handle file I/O and clipboard writes — the React UI never freezes.",
+    "tip4": "node_modules, .git, target, dist, build, and other heavy dirs are skipped by default."
+  },
+  "status": {
+    "initial": "Please select a code folder",
+    "scanningBg": "Scanning file tree in background, UI remains responsive...",
+    "scanDone": "Scan complete: {{files}} files, {{dirs}} folders",
+    "scanFailed": "Scan failed",
+    "copyingFile": "Copying file: {{name}}",
+    "copiedFile": "Copied file: {{path}} · {{size}} · {{chars}} chars",
+    "copyFileFailed": "Copy file failed",
+    "copyingFolder": "Copying folder: {{name}} · {{total}} files...",
+    "copiedFolder": "Copied folder: {{path}} · {{files}} files · {{size}} · {{chars}} chars",
+    "copiedFolderSkipped": " · skipped {{skipped}} items",
+    "copyFolderFailed": "Copy folder failed",
+    "skippedHint": "Skipped {{total}} hidden items or heavy directories; uncheck the options on the left and rescan to include them.",
+    "folderNoFiles": "No copyable files in this folder.",
+    "folderTooManyFiles": "This folder contains {{total}} files, exceeding the limit of {{max}}. Please select a smaller subfolder.",
+    "folderTooLarge": "Total size is about {{size}}, exceeding the limit of {{max}}. Please select a smaller subfolder.",
+    "folderTooLargeBlocked": "Folder too large, copy blocked"
+  },
+  "lang": {
+    "label": "Language",
+    "zh-CN": "简体中文",
+    "en-US": "English",
+    "ja-JP": "日本語"
+  }
+}

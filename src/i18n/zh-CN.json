@@ -1,0 +1,64 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "点击文件 = 复制；点击文件夹 = 展开/收起",
+    "chooseFolder": "选择文件夹",
+    "rescan": "重新扫描",
+    "searchPlaceholder": "搜索文件名或路径...",
+    "skipHeavyDirs": "跳过依赖/构建目录",
+    "includeHidden": "包含隐藏文件",
+    "noFolderSelected": "未选择文件夹",
+    "treeTitle": "文件树",
+    "itemCount": "{{total}} 项",
+    "emptyTreeHint": "选择文件夹后会显示文件树",
+    "emptySearchHint": "没有匹配的文件",
+    "copyFolderTitle": "复制这个文件夹下的全部文本文件",
+    "copyFileTitle": "复制这个文件"
+  },
+  "hero": {
+    "pill": "低内存 · 后台扫描 · 虚拟列表 · 文件夹快速复制",
+    "heading": "像 VS Code 文件树一样复制代码文件",
+    "description": "选择一个项目文件夹后，左侧会显示目录树。点击文件会复制。点击文件夹右侧的复制按钮，会复制这个文件夹下的文本文件；过大的文件夹会被提前拦截，避免剪贴板、Word 或系统卡死。",
+    "sampleTitle": "复制格式"
+  },
+  "stats": {
+    "status": "状态",
+    "files": "文件",
+    "folders": "文件夹",
+    "elapsed": "耗时",
+    "scanning": "扫描中",
+    "copying": "复制中",
+    "idle": "空闲"
+  },
+  "tips": {
+    "heading": "性能设计",
+    "tip1": "文件夹复制不再二次递归硬盘，而是直接使用已扫描的文件树，减少等待。",
+    "tip2": "复制前会先检查文件数量和总大小，过大的文件夹会立即阻止，避免长时间卡住。",
+    "tip3": "Rust 后台线程执行文件读取和剪贴板写入，React UI 不会 Not Responding。",
+    "tip4": "默认跳过 node_modules、.git、target、dist、build 等重型目录。"
+  },
+  "status": {
+    "initial": "请选择一个代码文件夹",
+    "scanningBg": "正在后台扫描文件树，界面仍可操作...",
+    "scanDone": "扫描完成：{{files}} 个文件，{{dirs}} 个文件夹",
+    "scanFailed": "扫描失败",
+    "copyingFile": "正在复制文件：{{name}}",
+    "copiedFile": "已复制文件：{{path}} · {{size}} · {{chars}} 字符",
+    "copyFileFailed": "复制文件失败",
+    "copyingFolder": "正在复制文件夹：{{name}} · {{total}} 个文件...",
+    "copiedFolder": "已复制文件夹：{{path}} · {{files}} 个文件 · {{size}} · {{chars}} 字符",
+    "copiedFolderSkipped": " · 跳过 {{skipped}} 项",
+    "copyFolderFailed": "复制文件夹失败",
+    "skippedHint": "已跳过 {{total}} 个隐藏项或重型目录；取消左侧选项后重新扫描可包含它们。",
+    "folderNoFiles": "这个文件夹下面没有可复制的文件。",
+    "folderTooManyFiles": "这个文件夹下有 {{total}} 个文件，超过当前快速复制上限 {{max}} 个。请选择更小的子文件夹，避免复制时间过长和剪贴板卡死。",
+    "folderTooLarge": "这个文件夹下文件总大小约 {{size}}，超过当前快速复制上限 {{max}}。请选择更小的子文件夹，避免复制时间过长和 Word 卡死。",
+    "folderTooLargeBlocked": "文件夹太大，已阻止复制"
+  },
+  "lang": {
+    "label": "语言",
+    "zh-CN": "简体中文",
+    "en-US": "English",
+    "ja-JP": "日本語"
+  }
+}

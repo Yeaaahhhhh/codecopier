@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Cliquer sur un fichier = copier ; cliquer sur un dossier = déplier/replier",
+    "chooseFolder": "Choisir un dossier",
+    "rescan": "Rescanner",
+    "searchPlaceholder": "Rechercher un nom de fichier ou un chemin...",
+    "skipHeavyDirs": "Ignorer les répertoires de dépendances/build",
+    "includeHidden": "Inclure les fichiers cachés",
+    "noFolderSelected": "Aucun dossier sélectionné",
+    "treeTitle": "Arborescence",
+    "itemCount": "{{total}} éléments",
+    "emptyTreeHint": "Sélectionnez un dossier pour afficher l'arborescence",
+    "emptySearchHint": "Aucun fichier correspondant",
+    "copyFolderTitle": "Copier tous les fichiers texte de ce dossier",
+    "copyFileTitle": "Copier ce fichier"
+  },
+  "hero": {
+    "pill": "Faible mémoire · Scan en arrière-plan · Liste virtuelle · Copie par dossier",
+    "heading": "Copiez des fichiers de code comme dans l'arborescence VS Code",
+    "description": "Après avoir sélectionné un dossier de projet, l'arborescence apparaît à gauche. Cliquer sur un fichier copie son chemin relatif + contenu. Cliquer sur le bouton copier d'un dossier copie tous les fichiers texte qu'il contient ; les dossiers trop volumineux sont bloqués pour éviter les blocages.",
+    "sampleTitle": "Format de copie"
+  },
+  "stats": {
+    "status": "Statut",
+    "files": "Fichiers",
+    "folders": "Dossiers",
+    "elapsed": "Durée",
+    "scanning": "Scan en cours",
+    "copying": "Copie en cours",
+    "idle": "Inactif"
+  },
+  "tips": {
+    "heading": "Conception performante",
+    "tip1": "La copie de dossier réutilise l'arborescence déjà scannée au lieu de rescanner le disque.",
+    "tip2": "Le nombre de fichiers et la taille totale sont vérifiés avant la copie ; les dossiers trop volumineux sont bloqués immédiatement.",
+    "tip3": "Les threads Rust en arrière-plan gèrent les E/S fichier et l'écriture du presse-papiers — l'interface React ne se fige jamais.",
+    "tip4": "node_modules, .git, target, dist, build et autres répertoires lourds sont ignorés par défaut."
+  },
+  "status": {
+    "initial": "Veuillez sélectionner un dossier de code",
+    "scanningBg": "Scan de l'arborescence en arrière-plan, l'interface reste réactive...",
+    "scanDone": "Scan terminé : {{files}} fichiers, {{dirs}} dossiers",
+    "scanFailed": "Échec du scan",
+    "copyingFile": "Copie du fichier : {{name}}",
+    "copiedFile": "Fichier copié : {{path}} · {{size}} · {{chars}} caractères",
+    "copyFileFailed": "Échec de la copie du fichier",
+    "copyingFolder": "Copie du dossier : {{name}} · {{total}} fichiers...",
+    "copiedFolder": "Dossier copié : {{path}} · {{files}} fichiers · {{size}} · {{chars}} caractères",
+    "copiedFolderSkipped": " · {{skipped}} éléments ignorés",
+    "copyFolderFailed": "Échec de la copie du dossier",
+    "skippedHint": "{{total}} éléments cachés ou répertoires lourds ignorés ; décochez les options à gauche et rescannez pour les inclure.",
+    "folderNoFiles": "Aucun fichier copiable dans ce dossier.",
+    "folderTooManyFiles": "Ce dossier contient {{total}} fichiers, dépassant la limite de {{max}}. Veuillez sélectionner un sous-dossier plus petit.",
+    "folderTooLarge": "La taille totale est d'environ {{size}}, dépassant la limite de {{max}}. Veuillez sélectionner un sous-dossier plus petit.",
+    "folderTooLargeBlocked": "Dossier trop volumineux, copie bloquée"
+  },
+  "lang": {
+    "label": "Langue"
+  }
+}

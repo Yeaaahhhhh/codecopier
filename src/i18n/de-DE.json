@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Datei anklicken = kopieren; Ordner anklicken = auf-/zuklappen",
+    "chooseFolder": "Ordner wählen",
+    "rescan": "Neu scannen",
+    "searchPlaceholder": "Dateiname oder Pfad suchen...",
+    "skipHeavyDirs": "Abhängigkeits-/Build-Ordner überspringen",
+    "includeHidden": "Versteckte Dateien einbeziehen",
+    "noFolderSelected": "Kein Ordner ausgewählt",
+    "treeTitle": "Dateibaum",
+    "itemCount": "{{total}} Einträge",
+    "emptyTreeHint": "Wählen Sie einen Ordner, um den Dateibaum anzuzeigen",
+    "emptySearchHint": "Keine passenden Dateien",
+    "copyFolderTitle": "Alle Textdateien in diesem Ordner kopieren",
+    "copyFileTitle": "Diese Datei kopieren"
+  },
+  "hero": {
+    "pill": "Wenig Speicher · Hintergrund-Scan · Virtuelle Liste · Ordner-Kopie",
+    "heading": "Code-Dateien kopieren wie im VS-Code-Dateibaum",
+    "description": "Nach Auswahl eines Projektordners erscheint links der Verzeichnisbaum. Ein Klick auf eine Datei kopiert ihren relativen Pfad + Inhalt. Ein Klick auf den Kopier-Button eines Ordners kopiert alle Textdateien darin; zu große Ordner werden frühzeitig blockiert, um Systemhänger zu vermeiden.",
+    "sampleTitle": "Kopierformat"
+  },
+  "stats": {
+    "status": "Status",
+    "files": "Dateien",
+    "folders": "Ordner",
+    "elapsed": "Dauer",
+    "scanning": "Scannt",
+    "copying": "Kopiert",
+    "idle": "Bereit"
+  },
+  "tips": {
+    "heading": "Performance-Design",
+    "tip1": "Die Ordner-Kopie verwendet den bereits gescannten Dateibaum, anstatt die Festplatte erneut zu scannen.",
+    "tip2": "Dateianzahl und Gesamtgröße werden vor dem Kopieren geprüft; zu große Ordner werden sofort blockiert.",
+    "tip3": "Rust-Hintergrund-Threads übernehmen Datei-I/O und Zwischenablage-Schreibvorgänge — die React-Oberfläche friert nie ein.",
+    "tip4": "node_modules, .git, target, dist, build und andere schwere Verzeichnisse werden standardmäßig übersprungen."
+  },
+  "status": {
+    "initial": "Bitte wählen Sie einen Code-Ordner",
+    "scanningBg": "Dateibaum wird im Hintergrund gescannt, die Oberfläche bleibt bedienbar...",
+    "scanDone": "Scan abgeschlossen: {{files}} Dateien, {{dirs}} Ordner",
+    "scanFailed": "Scan fehlgeschlagen",
+    "copyingFile": "Datei wird kopiert: {{name}}",
+    "copiedFile": "Datei kopiert: {{path}} · {{size}} · {{chars}} Zeichen",
+    "copyFileFailed": "Datei-Kopie fehlgeschlagen",
+    "copyingFolder": "Ordner wird kopiert: {{name}} · {{total}} Dateien...",
+    "copiedFolder": "Ordner kopiert: {{path}} · {{files}} Dateien · {{size}} · {{chars}} Zeichen",
+    "copiedFolderSkipped": " · {{skipped}} Einträge übersprungen",
+    "copyFolderFailed": "Ordner-Kopie fehlgeschlagen",
+    "skippedHint": "{{total}} versteckte Einträge oder schwere Verzeichnisse übersprungen; deaktivieren Sie die Optionen links und scannen Sie erneut, um sie einzubeziehen.",
+    "folderNoFiles": "Keine kopierbaren Dateien in diesem Ordner.",
+    "folderTooManyFiles": "Dieser Ordner enthält {{total}} Dateien und überschreitet das Limit von {{max}}. Bitte wählen Sie einen kleineren Unterordner.",
+    "folderTooLarge": "Die Gesamtgröße beträgt ca. {{size}} und überschreitet das Limit von {{max}}. Bitte wählen Sie einen kleineren Unterordner.",
+    "folderTooLargeBlocked": "Ordner zu groß, Kopie blockiert"
+  },
+  "lang": {
+    "label": "Sprache"
+  }
+}

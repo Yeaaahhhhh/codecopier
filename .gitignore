@@ -1,0 +1,33 @@
+# File: .gitignore
+
+# ===== Dependencies =====
+node_modules/
+
+# ===== Build Output =====
+dist/
+
+# ===== Rust / Tauri =====
+src-tauri/target/
+
+# ===== IDE / Editor =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===== OS Files =====
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ===== Env / Secrets =====
+.env
+.env.*
+
+# ===== Logs =====
+*.log
+npm-debug.log*
+
+# ===== TypeScript Cache =====
+*.tsbuildinfo

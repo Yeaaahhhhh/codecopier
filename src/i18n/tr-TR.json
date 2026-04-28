@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Dosyaya tıkla = kopyala; klasöre tıkla = aç/kapat",
+    "chooseFolder": "Klasör Seç",
+    "rescan": "Yeniden Tara",
+    "searchPlaceholder": "Dosya adı veya yol ara...",
+    "skipHeavyDirs": "Bağımlılık/derleme dizinlerini atla",
+    "includeHidden": "Gizli dosyaları dahil et",
+    "noFolderSelected": "Klasör seçilmedi",
+    "treeTitle": "Dosya Ağacı",
+    "itemCount": "{{total}} öğe",
+    "emptyTreeHint": "Dosya ağacını görüntülemek için bir klasör seçin",
+    "emptySearchHint": "Eşleşen dosya yok",
+    "copyFolderTitle": "Bu klasördeki tüm metin dosyalarını kopyala",
+    "copyFileTitle": "Bu dosyayı kopyala"
+  },
+  "hero": {
+    "pill": "Düşük bellek · Arka plan tarama · Sanal liste · Klasör toplu kopyalama",
+    "heading": "VS Code dosya ağacı gibi kod dosyalarını kopyalayın",
+    "description": "Bir proje klasörü seçtikten sonra sol tarafta dizin ağacı görünür. Bir dosyaya tıklamak göreli yol + içeriğini kopyalar. Bir klasörün kopyala düğmesine tıklamak içindeki tüm metin dosyalarını kopyalar; çok büyük klasörler sistem donmalarını önlemek için engellenir.",
+    "sampleTitle": "Kopyalama Formatı"
+  },
+  "stats": {
+    "status": "Durum",
+    "files": "Dosyalar",
+    "folders": "Klasörler",
+    "elapsed": "Süre",
+    "scanning": "Taranıyor",
+    "copying": "Kopyalanıyor",
+    "idle": "Boşta"
+  },
+  "tips": {
+    "heading": "Performans Tasarımı",
+    "tip1": "Klasör kopyalama, diski yeniden taramak yerine zaten taranmış dosya ağacını yeniden kullanır.",
+    "tip2": "Kopyalamadan önce dosya sayısı ve toplam boyut kontrol edilir; çok büyük klasörler hemen engellenir.",
+    "tip3": "Rust arka plan iş parçacıkları dosya G/Ç ve pano yazma işlemlerini yönetir — React arayüzü asla donmaz.",
+    "tip4": "node_modules, .git, target, dist, build ve diğer ağır dizinler varsayılan olarak atlanır."
+  },
+  "status": {
+    "initial": "Lütfen bir kod klasörü seçin",
+    "scanningBg": "Dosya ağacı arka planda taranıyor, arayüz yanıt vermeye devam ediyor...",
+    "scanDone": "Tarama tamamlandı: {{files}} dosya, {{dirs}} klasör",
+    "scanFailed": "Tarama başarısız",
+    "copyingFile": "Dosya kopyalanıyor: {{name}}",
+    "copiedFile": "Dosya kopyalandı: {{path}} · {{size}} · {{chars}} karakter",
+    "copyFileFailed": "Dosya kopyalama başarısız",
+    "copyingFolder": "Klasör kopyalanıyor: {{name}} · {{total}} dosya...",
+    "copiedFolder": "Klasör kopyalandı: {{path}} · {{files}} dosya · {{size}} · {{chars}} karakter",
+    "copiedFolderSkipped": " · {{skipped}} öğe atlandı",
+    "copyFolderFailed": "Klasör kopyalama başarısız",
+    "skippedHint": "{{total}} gizli öğe veya ağır dizin atlandı; soldaki seçeneklerin işaretini kaldırın ve dahil etmek için yeniden tarayın.",
+    "folderNoFiles": "Bu klasörde kopyalanabilir dosya yok.",
+    "folderTooManyFiles": "Bu klasör {{total}} dosya içeriyor ve {{max}} sınırını aşıyor. Daha küçük bir alt klasör seçin.",
+    "folderTooLarge": "Toplam boyut yaklaşık {{size}} olup {{max}} sınırını aşıyor. Daha küçük bir alt klasör seçin.",
+    "folderTooLargeBlocked": "Klasör çok büyük, kopyalama engellendi"
+  },
+  "lang": {
+    "label": "Dil"
+  }
+}

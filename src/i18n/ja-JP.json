@@ -1,0 +1,64 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "ファイルクリック＝コピー、フォルダクリック＝展開/折りたたみ",
+    "chooseFolder": "フォルダを選択",
+    "rescan": "再スキャン",
+    "searchPlaceholder": "ファイル名またはパスを検索...",
+    "skipHeavyDirs": "依存/ビルドディレクトリをスキップ",
+    "includeHidden": "隠しファイルを含む",
+    "noFolderSelected": "フォルダ未選択",
+    "treeTitle": "ファイルツリー",
+    "itemCount": "{{total}} 件",
+    "emptyTreeHint": "フォルダを選択するとファイルツリーが表示されます",
+    "emptySearchHint": "一致するファイルがありません",
+    "copyFolderTitle": "このフォルダ内のすべてのテキストファイルをコピー",
+    "copyFileTitle": "このファイルをコピー"
+  },
+  "hero": {
+    "pill": "低メモリ · バックグラウンドスキャン · 仮想リスト · フォルダ一括コピー",
+    "heading": "VS Codeのファイルツリーのようにコードファイルをコピー",
+    "description": "プロジェクトフォルダを選択すると、左側にディレクトリツリーが表示されます。ファイルをクリックすると「相対パス＋ファイル内容」がコピーされます。フォルダ右側のコピーボタンをクリックすると、フォルダ内のテキストファイルがまとめてコピーされます。大きすぎるフォルダは事前にブロックされます。",
+    "sampleTitle": "コピー形式"
+  },
+  "stats": {
+    "status": "状態",
+    "files": "ファイル",
+    "folders": "フォルダ",
+    "elapsed": "所要時間",
+    "scanning": "スキャン中",
+    "copying": "コピー中",
+    "idle": "待機中"
+  },
+  "tips": {
+    "heading": "パフォーマンス設計",
+    "tip1": "フォルダコピーはディスクを再走査せず、スキャン済みのファイルツリーを再利用します。",
+    "tip2": "コピー前にファイル数と合計サイズをチェックし、大きすぎるフォルダは即座にブロックします。",
+    "tip3": "RustバックグラウンドスレッドがファイルI/Oとクリップボード書き込みを処理し、React UIはフリーズしません。",
+    "tip4": "node_modules、.git、target、dist、buildなどの重いディレクトリはデフォルトでスキップされます。"
+  },
+  "status": {
+    "initial": "コードフォルダを選択してください",
+    "scanningBg": "バックグラウンドでファイルツリーをスキャン中、UIは操作可能です...",
+    "scanDone": "スキャン完了：ファイル {{files}} 件、フォルダ {{dirs}} 件",
+    "scanFailed": "スキャン失敗",
+    "copyingFile": "ファイルをコピー中：{{name}}",
+    "copiedFile": "ファイルをコピーしました：{{path}} · {{size}} · {{chars}} 文字",
+    "copyFileFailed": "ファイルのコピーに失敗しました",
+    "copyingFolder": "フォルダをコピー中：{{name}} · {{total}} ファイル...",
+    "copiedFolder": "フォルダをコピーしました：{{path}} · {{files}} ファイル · {{size}} · {{chars}} 文字",
+    "copiedFolderSkipped": " · {{skipped}} 件スキップ",
+    "copyFolderFailed": "フォルダのコピーに失敗しました",
+    "skippedHint": "{{total}} 件の隠し項目または重いディレクトリをスキップしました。左側のオプションのチェックを外して再スキャンすると含められます。",
+    "folderNoFiles": "このフォルダにはコピー可能なファイルがありません。",
+    "folderTooManyFiles": "このフォルダには {{total}} 個のファイルがあり、上限 {{max}} 個を超えています。より小さいサブフォルダを選択してください。",
+    "folderTooLarge": "合計サイズは約 {{size}} で、上限 {{max}} を超えています。より小さいサブフォルダを選択してください。",
+    "folderTooLargeBlocked": "フォルダが大きすぎるため、コピーをブロックしました"
+  },
+  "lang": {
+    "label": "言語",
+    "zh-CN": "简体中文",
+    "en-US": "English",
+    "ja-JP": "日本語"
+  }
+}

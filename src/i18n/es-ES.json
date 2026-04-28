@@ -1,0 +1,61 @@
+{
+  "app": {
+    "brand": "Code Copier",
+    "brandHint": "Clic en archivo = copiar; clic en carpeta = expandir/contraer",
+    "chooseFolder": "Elegir carpeta",
+    "rescan": "Reescanear",
+    "searchPlaceholder": "Buscar nombre de archivo o ruta...",
+    "skipHeavyDirs": "Omitir carpetas de dependencias/build",
+    "includeHidden": "Incluir archivos ocultos",
+    "noFolderSelected": "Ninguna carpeta seleccionada",
+    "treeTitle": "Árbol de archivos",
+    "itemCount": "{{total}} elementos",
+    "emptyTreeHint": "Seleccione una carpeta para mostrar el árbol de archivos",
+    "emptySearchHint": "No hay archivos coincidentes",
+    "copyFolderTitle": "Copiar todos los archivos de texto de esta carpeta",
+    "copyFileTitle": "Copiar este archivo"
+  },
+  "hero": {
+    "pill": "Baja memoria · Escaneo en segundo plano · Lista virtual · Copia por carpeta",
+    "heading": "Copia archivos de código como en el árbol de VS Code",
+    "description": "Después de seleccionar una carpeta de proyecto, el árbol de directorios aparece a la izquierda. Al hacer clic en un archivo se copia su ruta relativa + contenido. Al hacer clic en el botón de copiar de una carpeta se copian todos los archivos de texto; las carpetas demasiado grandes se bloquean para evitar bloqueos del sistema.",
+    "sampleTitle": "Formato de copia"
+  },
+  "stats": {
+    "status": "Estado",
+    "files": "Archivos",
+    "folders": "Carpetas",
+    "elapsed": "Duración",
+    "scanning": "Escaneando",
+    "copying": "Copiando",
+    "idle": "Inactivo"
+  },
+  "tips": {
+    "heading": "Diseño de rendimiento",
+    "tip1": "La copia de carpetas reutiliza el árbol de archivos ya escaneado en lugar de reescanear el disco.",
+    "tip2": "Se verifica el número de archivos y el tamaño total antes de copiar; las carpetas demasiado grandes se bloquean de inmediato.",
+    "tip3": "Los hilos de Rust en segundo plano manejan la E/S de archivos y la escritura en el portapapeles — la interfaz React nunca se congela.",
+    "tip4": "node_modules, .git, target, dist, build y otros directorios pesados se omiten por defecto."
+  },
+  "status": {
+    "initial": "Por favor seleccione una carpeta de código",
+    "scanningBg": "Escaneando el árbol de archivos en segundo plano, la interfaz sigue respondiendo...",
+    "scanDone": "Escaneo completado: {{files}} archivos, {{dirs}} carpetas",
+    "scanFailed": "Escaneo fallido",
+    "copyingFile": "Copiando archivo: {{name}}",
+    "copiedFile": "Archivo copiado: {{path}} · {{size}} · {{chars}} caracteres",
+    "copyFileFailed": "Error al copiar archivo",
+    "copyingFolder": "Copiando carpeta: {{name}} · {{total}} archivos...",
+    "copiedFolder": "Carpeta copiada: {{path}} · {{files}} archivos · {{size}} · {{chars}} caracteres",
+    "copiedFolderSkipped": " · {{skipped}} elementos omitidos",
+    "copyFolderFailed": "Error al copiar carpeta",
+    "skippedHint": "Se omitieron {{total}} elementos ocultos o directorios pesados; desmarque las opciones de la izquierda y reescanee para incluirlos.",
+    "folderNoFiles": "No hay archivos copiables en esta carpeta.",
+    "folderTooManyFiles": "Esta carpeta contiene {{total}} archivos, superando el límite de {{max}}. Seleccione una subcarpeta más pequeña.",
+    "folderTooLarge": "El tamaño total es de aproximadamente {{size}}, superando el límite de {{max}}. Seleccione una subcarpeta más pequeña.",
+    "folderTooLargeBlocked": "Carpeta demasiado grande, copia bloqueada"
+  },
+  "lang": {
+    "label": "Idioma"
+  }
+}
