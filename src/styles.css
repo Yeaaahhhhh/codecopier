@@ -187,14 +187,14 @@ button.primary {
   user-select: none;
 }
 
+/* 关键改动 1：tree-list 同时启用横向 + 纵向滚动 */
 .tree-list {
   position: relative;
   min-width: 0;
   min-height: 0;
   height: 100%;
-  overflow-y: scroll;
-  overflow-x: auto;
-  scrollbar-gutter: stable both-edges;
+  overflow: scroll;            /* 同时显示两个方向的滚动条占位 */
+  scrollbar-gutter: stable;
   overscroll-behavior: contain;
 }
 
@@ -218,9 +218,16 @@ button.primary {
   background: rgba(255, 255, 255, .32);
 }
 
+.tree-list::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+/* 关键改动 2：spacer 由内容撑开宽度（取最宽行的宽度），最少占满容器 */
 .tree-spacer {
   position: relative;
+  display: inline-block;       /* 让宽度由子项决定 */
   min-width: 100%;
+  vertical-align: top;
 }
 
 .tree-empty {
@@ -231,16 +238,19 @@ button.primary {
   font-size: 13px;
 }
 
+/* 关键改动 3：行宽度由内容决定，不再被拉伸到容器宽度 */
 .tree-row {
   position: absolute;
   left: 0;
-  right: 0;
   top: 0;
+  /* 移除 right: 0 */
   height: 28px;
+  width: max-content;          /* 由内容撑开 */
+  min-width: 100%;             /* 至少占满容器，保证 hover 整行高亮 */
   display: flex;
   align-items: center;
   gap: 6px;
-  padding-right: 8px;
+  padding-right: 12px;
   color: #cbd5e7;
   cursor: pointer;
   user-select: none;
@@ -270,16 +280,16 @@ button.primary {
   opacity: .9;
 }
 
+/* 关键改动 4：文件名不再省略号截断，完整显示，触发横向溢出 */
 .file-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  flex: 0 1 auto;
-  min-width: 0;
+  flex: 0 0 auto;
+  white-space: nowrap;
+  overflow: visible;
 }
 
 .row-flex-spacer {
-  flex: 1 1 auto;
-  min-width: 8px;
+  flex: 0 0 16px;              /* 固定间隔即可，不再吞噬空间 */
+  min-width: 16px;
 }
 
 .file-size {
@@ -484,4 +494,3 @@ pre {
   background: #1a1f2e;
   color: #dbe7ff;
 }
-
